@@ -10,17 +10,19 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="src/style.css" />
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
     <title>Vanilla Weather App</title>
   </head>
   <body>
     <div class="weather-app">
       <header>
-        <form action="" class="search-form">
+        <form action="" class="search-form" id="search-form">
           <input
             type="search"
             placeholder="Enter a city..."
             required
             class="search-form-input"
+            id="search-form-input"
           />
           <input type="submit" value="Search" class="search-form-button" />
         </form>
@@ -28,7 +30,7 @@
       <main>
         <div class="weather-app-data">
           <div>
-            <h1 class="weather-app-city">Calgary</h1>
+            <h1 class="weather-app-city" id="weather-app-city">Calgary</h1>
             <p class="weather-app-details">
               Sunday 09:33, scattered clouds
               <br />
@@ -58,5 +60,6 @@
         >
       </footer>
     </div>
+    <script src="src/index.js"></script>
   </body>
 </html>
