@@ -3,38 +3,47 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playpen+Sans:wght@100;200;300;400;500;600;700;800&family=Quicksand:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="src/style.css" />
     <title>Vanilla Weather App</title>
   </head>
   <body>
-    <header>
-      <form action="">
-        <input type="search" placeholder="Enter a city..." required />
-        <input type="submit" value="Search" />
-      </form>
-    </header>
-    <div>
-      <h1>Calgary</h1>
-      <p>
-        Sunday 09:33, scattered clouds
-        <br />
-        Humidity: 20%, Wind 30 km/h
-      </p>
+    <div class="weather-app">
+      <header>
+        <form action="">
+          <input type="search" placeholder="Enter a city..." required />
+          <input type="submit" value="Search" />
+        </form>
+      </header>
+      <div>
+        <h1>Calgary</h1>
+        <p>
+          Sunday 09:33, scattered clouds
+          <br />
+          Humidity: 20%, Wind 30 km/h
+        </p>
+      </div>
+      <div>⛅️ 5°C</div>
+      <footer>
+        Built by
+        <a href="https://github.com/Neveod" target="_blank">Neve O'Dwyer</a>,
+        and is
+        <a href="https://github.com/Neveod/vanilla-weather-app" target="_blank"
+          >open-sourced on GitHub</a
+        >
+        and hosted
+        <a
+          href="https://vanilla-weather-forecast-shecodes.netlify.app/"
+          target="_blank"
+        >
+          on Netlify.</a
+        >
+      </footer>
     </div>
-    <div>⛅️ 5°C</div>
-    <footer>
-      Built by
-      <a href="https://github.com/Neveod" target="_blank">Neve O'Dwyer</a>, and
-      is
-      <a href="https://github.com/Neveod/vanilla-weather-app" target="_blank"
-        >open-sourced on GitHub</a
-      >
-      and hosted
-      <a
-        href="https://vanilla-weather-forecast-shecodes.netlify.app/"
-        target="_blank"
-      >
-        on Netlify.</a
-      >
-    </footer>
   </body>
 </html>
