@@ -83,9 +83,11 @@ main {
 .weather-forecast {
   display: flex;
   justify-content: space-between;
-  margin: 20px;
+  margin: 0 auto;
+  max-width: 600px;
   text-align: center;
   color: #000;
+  border-radius: 17px;
 }
 .weather-forecast-date {
   font-size: 16px;
